@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:rgba(174,221,125,0.9);
+}
+
+/*tag*/
+header, footer {
+	padding:1em;
+	text-align:center;
+}
+header {
+	min-height:93.75px;
+}
+nav {
+	width:100%;
+	font-family: "微軟正黑體 Light", "黑體-繁", sans-serif;
+	color: #000;
+	background-color: rgb(215,215,215);
+	text-align:center;
+	border-radius: 10%;
+	display: table;
+	clear:left;
+	margin: auto;
+}
+h1 {font-size:2em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.17em;}
+h4 {}
+h5 {font-size:0.83em;}
+h6 {font-size:0.75em;}
+
+/*link*/
+a:link a:visited{
+}
+a:hover a:active{
+}
+
+/*ID*/
+#wrapper{
+	width:80%;
+	margin:auto;
+}
+#content{
+	min-height:400px;
+}
+#Search {
+	float:right;
+	padding-right:0;
+	margin-right:0;
+}
+#LOGO {
+	float:left;
+	padding-left:0;
+	margin-left:0;
+}
+#navCupdown {
+	display:table;
+}
+
+/*Class*/
+.LOGOs {
+	width:25%;
+	height:10%;
+}
+.photolist {
+	font-family:"微軟正黑體 Light", "黑體-繁", sans-serif;
+	width: 200px;
+	height: 320px;
+	float: left;
+	margin:25px 7.5px;
+}
+.center {
+	position:relative;
+	left:6%;
+}
+.pagination {
+    display: inline-block;
+}
+.V-center {
+	display:table-cell;
+	vertical-align:middle;
+}
+.p-font-family {
+	font-family:"微軟正黑體 Light", "黑體-繁", sans-serif;
+}
+
+/*複合*/
+#navCategory span {
+	text-align: center;
+	font-weight: bolder;
+}
+#navCupdown ul {
+	
+}
+#content p img {
+	width:150px;
+	height:225px;
+}
+#content p {
+	text-align: center;
+	overflow:hidden;
+}
+#content a:hover {
+	font-weight:bolder;
+	color:#00F;
+	text-decoration:none;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+

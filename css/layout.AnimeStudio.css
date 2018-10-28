@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:rgba(174,221,125,0.9);
+}
+
+/*tag*/
+header, footer {
+	padding:1em;
+	text-align:center;
+}
+header {
+	min-height:93.75px;
+}
+
+/*ID*/
+#wrapper{
+	width:80%;
+	margin:auto;
+}
+
+#content{
+	min-height:400px;
+}
+#contentL{
+	width:50%;
+	height:325px;
+	text-align:center;
+	float:left;
+}
+#contentR{
+	width:50%;
+	min-height:325px;
+	float:left;
+}
+#Search {
+	float:right;
+	padding-right:0;
+	margin-right:0;
+}
+
+/*Class*/
+.text-center {
+	display:table-cell;
+	vertical-align:middle;
+}
+.IntroContent {
+	width:100%;	
+	font-family:"微軟正黑體 Light", "黑體-繁", sans-serif;
+	text-indent:2em;
+}
+.otherinfo {
+	width:250px;
+	float:left;
+	margin:0 4%;
+}
+.pv {
+	width:75%;
+	height:360px;
+	clear: left;
+	padding:2% 15%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/*複合*/
+#content .otherinfo span {
+	text-indent: 2em;
+	white-space: nowrap;
+	display: list-item;
+	font-family: "微軟正黑體 Light", "黑體-繁", sans-serif;
+	line-height: 1.5em;
+	list-style-type: none;
+}

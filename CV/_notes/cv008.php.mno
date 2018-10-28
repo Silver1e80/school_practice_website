@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_CV" value="name:cvId;datatype:string,name:cvName;datatype:string,name:cvDesc;datatype:string" />
+	<infoitem key="UD_CV8" value="name:cvId;datatype:string,name:cvName;datatype:string,name:cvDesc;datatype:string" />
+	<infoitem key="UD_CV88" value="name:cvId;datatype:string,name:cvName;datatype:string,name:cvDesc;datatype:string" />
+</info>

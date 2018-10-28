@@ -1,0 +1,3 @@
+﻿SELECT animation.*,company.cId,company.cName,charactor.charactor_Name,cv.cvId,cv.cvName
+FROM animation LEFT OUTER JOIN (makes JOIN company ON makes.cId = company.cId) ON animation.aId = makes.aId 
+LEFT OUTER JOIN (charactor JOIN dub ON charactor.charactorId = dub.charactorId JOIN cv ON dub.cvId = cv.cvId) ON animation.aId = charactor.aId 

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_category_index" value="name:categoryId;datatype:string,name:category_Name;datatype:string" />
+	<infoitem key="UD_animation_index" value="name:aId;datatype:string,name:aName;datatype:string,name:aDesc;datatype:string" />
+	<infoitem key="UD_belong_index" value="name:categoryId;datatype:string,name:aId;datatype:string" />
+	<infoitem key="UD_charactor_index" value="name:aId;datatype:string,name:charactorId;datatype:string,name:charactor_Name;datatype:string" />
+	<infoitem key="UD_company_index" value="name:cId;datatype:string,name:cName;datatype:string,name:cDesc;datatype:string" />
+	<infoitem key="UD_cv_index" value="name:cvId;datatype:string,name:cvName;datatype:string,name:cvDesc;datatype:string" />
+	<infoitem key="UD_dub_index" value="name:aId;datatype:string,name:charactorId;datatype:string,name:cvId;datatype:string" />
+	<infoitem key="UD_makes_index" value="name:aId;datatype:string,name:cId;datatype:string" />
+</info>

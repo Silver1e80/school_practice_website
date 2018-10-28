@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:rgba(174,221,125,0.9);
+}
+
+/*tag*/
+header, footer {
+	padding:1em;
+	text-align:center;
+}
+header {
+	min-height:93.75px;
+}
+nav {
+	min-height: 93.75px;
+	font-family: "微軟正黑體 Light", "黑體-繁", sans-serif;
+	color: #000;
+	background-color: rgb(215,215,215);
+	text-align:center;
+	border-radius: 5%;
+	display: table;
+}
+
+/*ID*/
+#wrapper{
+	width:80%;
+	margin:auto;
+}
+
+#content{
+	min-height:400px;
+}
+#contentL{
+	float:left;
+}
+#contentR{
+	float:left;
+	overflow:hidden;
+}
+#Search {
+	float:right;
+	padding-right:0;
+	margin-right:0;
+}
+/*Class*/
+.nav {
+	list-style-type:none;
+}
+.text-center {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/*複合*/
+nav li {
+	min-width: 130px;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin: auto 1em;
+}
+nav a{
+	color:#000;
+	text-decoration:none;
+}
+nav a:hover {
+	font-weight:bolder;
+	font-style:oblique;
+}
+

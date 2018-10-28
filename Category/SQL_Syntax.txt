@@ -1,0 +1,11 @@
+SELECT `category`.`category_Name`, `animation`.`aName`
+FROM `animation` LEFT JOIN `belong` ON `animation`.`aId` = `belong`.`aId` LEFT JOIN `category` ON `category`.`categoryId` = `belong`.`categoryId` 
+WHERE  `category`.`categoryId` = 'ctg01'
+
+WHERE  `category`.`categoryId` = 'ctg02'
+
+WHERE  `category`.`categoryId` = 'ctg03'
+
+WHERE  `category`.`categoryId` = 'ctg04'
+
+WHERE  `category`.`categoryId` = 'ctg05'

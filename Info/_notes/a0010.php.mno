@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_AnStaffCast" value="name:aId;datatype:string,name:aName;datatype:string,name:aDesc;datatype:string,name:cId;datatype:string,name:cName;datatype:string,name:charactor_Name;datatype:string,name:cvId;datatype:string,name:cvName;datatype:string" />
+</info>

@@ -1,0 +1,53 @@
+﻿Create Table Company (
+    cId char(5) Not Null Comment '公司編號',
+    cName Varchar(50) Comment '公司名稱',
+    cDesc Varchar(350) Comment '公司簡介',
+    Primary Key (cId)
+);
+Create Table Animation (
+    aId char(5) Not Null Comment '動畫編號',
+    aName Varchar(50) Comment '動畫名稱',
+    aDesc Varchar(350) Comment '動畫簡介',
+    Primary Key (aId)
+);
+Create Table CV (
+    cvId char(5) Not Null Comment '聲優編號',
+    cvName Varchar(50) Comment '聲優名稱',
+    cvDesc Varchar(350) Comment '聲優簡介',
+    Primary Key (cvId)
+);
+Create Table Category (
+    categoryId char(5) Not Null Comment '分類碼',
+    category_Name Varchar(50) Comment '分類名稱',
+    ---classify char(5) Comment '分類',---
+    Primary Key (categoryId),
+    ---Foreign Key (classify) References Category (categoryId) On Delete Cascade On Update Cascade---
+);
+Create Table Makes (
+    aId char(5) Not Null Comment '動畫編號',
+    cId char(5) Not Null Comment '公司編號',
+    Foreign Key (aId) References Animation (aId) On Update Cascade,
+    Foreign Key (cId) References Company (cId) On Update Cascade
+);
+Create Table Charactor (
+    aId char(5) Not Null Comment '動畫編號',
+    charactorId char(5) Not Null Comment '角色編號',
+    charactor_Name Varchar(50) Comment '角色名稱',
+    Primary Key (aId,charactorId),
+    Foreign Key (aId) References Animation (aId) On Delete Cascade On Update Cascade
+);
+Create Table Dub (
+    aId char(5) Not Null Comment '動畫編號',
+    charactorId char(5) Not Null Comment '角色編號',
+    cvId char(5) Not Null Comment '聲優編號',
+    Primary Key (aId,charactorId,cvId),
+    Foreign Key (aId,charactorId) References Charactor (aId,charactorId) On Update Cascade,
+    Foreign Key (cvId) References CV (cvId) On Update Cascade
+);
+Create Table Belong (
+    categoryId char(5) Not Null Comment '分類碼',
+    aId char(5) Not Null Comment '動畫編號',
+    Primary Key (categoryId,aId),
+    Foreign Key (categoryId) References Category (categoryId) On Update Cascade,
+    Foreign Key (aId) References Animation (aId) On Update Cascade
+);
